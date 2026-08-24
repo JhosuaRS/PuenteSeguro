@@ -1,0 +1,140 @@
+// ==============================
+// MENÚ RESPONSIVO
+// ==============================
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    const icon = menuBtn.querySelector("i");
+
+    if (navLinks.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
+
+});
+
+
+// Cerrar menú al hacer clic en un enlace
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        const icon = menuBtn.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+    });
+
+});
+
+
+// ==============================
+// NAVBAR AL HACER SCROLL
+// ==============================
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 40) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+});
+
+
+// ==============================
+// ANIMACIONES AL HACER SCROLL
+// ==============================
+
+const observerOptions = {
+    threshold: 0.15
+};
+
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("active");
+
+            }
+
+        });
+
+    },
+    observerOptions
+);
+
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+revealElements.forEach(element => {
+
+    revealObserver.observe(element);
+
+});
+
+
+// ==============================
+// ANIMACIÓN SUAVE DEL HERO
+// ==============================
+
+window.addEventListener("mousemove", (event) => {
+
+    const visual =
+        document.querySelector(".hero-visual");
+
+    if (!visual) return;
+
+    const x =
+        (window.innerWidth / 2 - event.clientX) / 80;
+
+    const y =
+        (window.innerHeight / 2 - event.clientY) / 80;
+
+    visual.style.transform =
+        `translate(${x}px, ${y}px)`;
+
+});
+
+
+// ==============================
+// EFECTO EN TARJETAS
+// ==============================
+
+const cards =
+    document.querySelectorAll(
+        ".about-card, .workflow-step, .team-card"
+    );
+
+
+cards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+
+        card.style.transition =
+            "transform 0.25s ease";
+
+    });
+
+});

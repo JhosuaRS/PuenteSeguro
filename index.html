@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puente Seguro | INNOW 2026</title>
+  <meta name="description" content="Puente Seguro: prototipo académico de automatización e inteligencia artificial.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <div class="background-glow glow-1"></div><div class="background-glow glow-2"></div>
+
+  <header class="navbar">
+    <a href="#inicio" class="logo"><div class="logo-icon"><i class="fa-solid fa-bridge"></i></div>
+      <div><span class="logo-title">PUENTE</span><span class="logo-subtitle">SEGURO</span></div></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#proyecto">Proyecto</a><a href="#funcionamiento">Cómo funciona</a><a href="#tecnologia">Tecnología</a><a href="#impacto">Impacto</a><a href="#equipo">Equipo</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="badge"><span class="badge-dot"></span>INNOW 2026 · PROTOTIPO ACADÉMICO</div>
+        <h1>La tecnología como puente <span>hacia el apoyo humano.</span></h1>
+        <p>Puente Seguro es un prototipo que combina automatización e inteligencia artificial para facilitar un primer contacto, estructurar información y agilizar la derivación hacia atención humana.</p>
+        <div class="hero-buttons">
+          <a href="#funcionamiento" class="btn btn-primary">Conocer el proyecto <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#proyecto" class="btn btn-secondary"><i class="fa-solid fa-circle-play"></i> Ver cómo funciona</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="system-card">
+          <div class="card-top"><div><span class="system-status"><span></span>SISTEMA ACTIVO</span><h3>Flujo Puente Seguro</h3></div><i class="fa-solid fa-shield-heart shield-icon"></i></div>
+          <div class="system-flow">
+            <div class="flow-item"><div class="flow-icon"><i class="fa-solid fa-message"></i></div><div><strong>Mensaje</strong><small>Entrada de texto</small></div></div>
+            <div class="flow-line"></div>
+            <div class="flow-item"><div class="flow-icon"><i class="fa-solid fa-diagram-project"></i></div><div><strong>n8n</strong><small>Orquestación</small></div></div>
+            <div class="flow-line"></div>
+            <div class="flow-item"><div class="flow-icon ai-icon"><i class="fa-solid fa-brain"></i></div><div><strong>Claude</strong><small>Análisis estructurado</small></div></div>
+            <div class="flow-line"></div>
+            <div class="flow-item"><div class="flow-icon human-icon"><i class="fa-solid fa-people-group"></i></div><div><strong>Apoyo humano</strong><small>Derivación</small></div></div>
+          </div>
+        </div>
+        <div class="floating-card card-security"><i class="fa-solid fa-lock"></i><div><strong>Datos minimizados</strong><small>Solo la información necesaria</small></div></div>
+        <div class="floating-card card-human"><i class="fa-solid fa-user-shield"></i><div><strong>Revisión humana</strong><small>La IA no toma la decisión final</small></div></div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-card reveal"><strong>ODS 5</strong><span>Igualdad de género</span></div>
+      <div class="stat-card reveal"><strong>ODS 16</strong><span>Paz, justicia e instituciones sólidas</span></div>
+      <div class="stat-card reveal"><strong>100%</strong><span>De los casos válidos se derivan a atención humana</span></div>
+      <div class="stat-card reveal"><strong>IA +</strong><span>Automatización responsable</span></div>
+    </section>
+
+    <section class="section about" id="proyecto">
+      <div class="section-heading reveal"><span class="section-tag">01 · EL PROYECTO</span><h2>Un primer contacto <span>más accesible.</span></h2>
+      <p>Pedir ayuda puede ser difícil. Puente Seguro busca reducir la barrera del primer contacto permitiendo que una persona pueda expresar una situación utilizando sus propias palabras.</p></div>
+      <div class="about-grid">
+        <article class="about-card reveal"><div class="about-icon"><i class="fa-solid fa-message"></i></div><h3>Comunicación sencilla</h3><p>El sistema recibe mensajes escritos en lenguaje natural desde un canal de mensajería.</p></article>
+        <article class="about-card reveal"><div class="about-icon"><i class="fa-solid fa-brain"></i></div><h3>IA como apoyo</h3><p>Claude ayuda a transformar información no estructurada en indicadores y un resumen procesable.</p></article>
+        <article class="about-card reveal"><div class="about-icon"><i class="fa-solid fa-users"></i></div><h3>Siempre humano</h3><p>La automatización no reemplaza a las personas. Los casos válidos continúan hacia una ruta de derivación humana.</p></article>
+      </div>
+    </section>
+
+    <section class="section workflow-section" id="funcionamiento">
+      <div class="section-heading center reveal"><span class="section-tag">02 · FUNCIONAMIENTO</span><h2>¿Cómo funciona <span>Puente Seguro?</span></h2><p>El sistema separa la inteligencia artificial de las decisiones de priorización para mantener un proceso controlado y verificable.</p></div>
+      <div class="workflow">
+        <div class="workflow-step reveal"><div class="step-number">01</div><div class="step-icon"><i class="fa-solid fa-paper-plane"></i></div><h3>Entrada</h3><p>La persona escribe un mensaje desde un canal de comunicación.</p></div>
+        <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="workflow-step reveal"><div class="step-number">02</div><div class="step-icon"><i class="fa-solid fa-diagram-project"></i></div><h3>n8n</h3><p>El workflow valida la entrada y prepara únicamente los datos necesarios.</p></div>
+        <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="workflow-step reveal"><div class="step-number">03</div><div class="step-icon"><i class="fa-solid fa-brain"></i></div><h3>Claude</h3><p>La IA interpreta el lenguaje y devuelve información estructurada.</p></div>
+        <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="workflow-step reveal"><div class="step-number">04</div><div class="step-icon"><i class="fa-solid fa-list-check"></i></div><h3>Reglas</h3><p>n8n valida los datos y aplica una matriz de priorización.</p></div>
+        <div class="workflow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="workflow-step reveal"><div class="step-number">05</div><div class="step-icon"><i class="fa-solid fa-handshake-angle"></i></div><h3>Derivación</h3><p>El caso válido se dirige hacia el mecanismo de apoyo humano.</p></div>
+      </div>
+    </section>
+
+    <section class="section tech-section" id="tecnologia">
+      <div class="tech-content reveal"><span class="section-tag">03 · TECNOLOGÍA</span><h2>Tecnología diseñada <span>para trabajar en conjunto.</span></h2><p>La arquitectura del proyecto está dividida en componentes para diferenciar claramente la recepción del mensaje, la automatización, el análisis de lenguaje y la derivación humana.</p>
+        <div class="tech-list">
+          <div class="tech-item"><div class="tech-logo n8n">N</div><div><h3>n8n</h3><p>Orquesta el flujo, valida datos, aplica condiciones y gestiona errores.</p></div></div>
+          <div class="tech-item"><div class="tech-logo claude"><i class="fa-solid fa-brain"></i></div><div><h3>Claude API</h3><p>Procesa lenguaje natural y genera una salida estructurada.</p></div></div>
+          <div class="tech-item"><div class="tech-logo json">{ }</div><div><h3>JSON</h3><p>Permite validar campos, tipos y datos antes de continuar el flujo.</p></div></div>
+        </div>
+      </div>
+      <div class="architecture-card reveal">
+        <div class="architecture-header"><span><i class="fa-solid fa-code"></i> ARQUITECTURA DEL SISTEMA</span><div class="architecture-dots"><span></span><span></span><span></span></div></div>
+        <div class="architecture-flow">
+          <div class="architecture-node"><i class="fa-solid fa-message"></i><span>Canal</span></div><div class="architecture-connector"></div>
+          <div class="architecture-node active"><i class="fa-solid fa-diagram-project"></i><span>n8n</span></div><div class="architecture-connector"></div>
+          <div class="architecture-node"><i class="fa-solid fa-brain"></i><span>Claude</span></div><div class="architecture-connector"></div>
+          <div class="architecture-node"><i class="fa-solid fa-list-check"></i><span>Reglas</span></div><div class="architecture-connector"></div>
+          <div class="architecture-node human"><i class="fa-solid fa-users"></i><span>Humano</span></div>
+        </div>
+        <div class="code-box"><div class="code-line"><span class="code-key">status:</span> <span class="code-value">"validado"</span></div><div class="code-line"><span class="code-key">analisis:</span> <span class="code-value">"estructurado"</span></div><div class="code-line"><span class="code-key">prioridad:</span> <span class="code-value">"según reglas"</span></div><div class="code-line"><span class="code-key">derivacion:</span> <span class="code-value green">true</span></div></div>
+      </div>
+    </section>
+
+    <section class="section responsible-section">
+      <div class="responsible-card reveal"><div class="responsible-icon"><i class="fa-solid fa-scale-balanced"></i></div><div><span class="section-tag">04 · USO RESPONSABLE DE IA</span><h2>La inteligencia artificial <span>no decide sola.</span></h2><p>Claude interpreta y estructura la información, pero la prioridad final se determina mediante reglas configuradas en n8n. Además, los casos válidos se encaminan a una ruta de revisión o atención humana.</p></div></div>
+      <div class="principles">
+        <div class="principle reveal"><i class="fa-solid fa-eye"></i><h3>Transparencia</h3><p>El sistema comunica que utiliza automatización e IA.</p></div>
+        <div class="principle reveal"><i class="fa-solid fa-lock"></i><h3>Privacidad</h3><p>Se minimiza la información utilizada y almacenada.</p></div>
+        <div class="principle reveal"><i class="fa-solid fa-user-check"></i><h3>Responsabilidad</h3><p>Las decisiones importantes mantienen supervisión humana.</p></div>
+        <div class="principle reveal"><i class="fa-solid fa-triangle-exclamation"></i><h3>Contingencia</h3><p>Los errores activan rutas seguras y revisión.</p></div>
+      </div>
+    </section>
+
+    <section class="section impact-section" id="impacto">
+      <div class="section-heading center reveal"><span class="section-tag">05 · IMPACTO</span><h2>Tecnología con <span>propósito social.</span></h2><p>Puente Seguro se relaciona con objetivos orientados a facilitar el acceso a mecanismos de apoyo y fortalecer la conexión con atención humana.</p></div>
+      <div class="ods-container">
+        <div class="ods-card reveal"><div class="ods-number">5</div><div><span>OBJETIVO DE DESARROLLO SOSTENIBLE</span><h3>Igualdad de género</h3><p>El proyecto busca contribuir a reducir barreras para el acceso inicial a mecanismos de apoyo.</p></div></div>
+        <div class="ods-card reveal"><div class="ods-number">16</div><div><span>OBJETIVO DE DESARROLLO SOSTENIBLE</span><h3>Paz, justicia e instituciones sólidas</h3><p>Promueve una conexión organizada entre el primer contacto y mecanismos humanos de orientación.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section team-section" id="equipo">
+      <div class="section-heading center reveal"><span class="section-tag">06 · EQUIPO</span><h2>Las personas detrás <span>del proyecto.</span></h2><p>Proyecto desarrollado para INNOW 2026 por estudiantes del Colegio Técnico Profesional de Calle Blancos.</p></div>
+      <div class="team-grid">
+        <div class="team-card reveal"><div class="team-avatar">F</div><h3>Felipe Alvarado Mata</h3><span>Integrante del equipo</span></div>
+        <div class="team-card reveal"><div class="team-avatar">J</div><h3>Joshua Rodríguez Solano</h3><span>Integrante del equipo</span></div>
+        <div class="team-card reveal"><div class="team-avatar">E</div><h3>Esaú Méndez Parra</h3><span>Integrante del equipo</span></div>
+      </div>
+    </section>
+
+    <section class="cta-section"><div class="cta-content reveal"><i class="fa-solid fa-bridge"></i><h2>Puente Seguro</h2><p>Automatización inteligente. Decisiones controladas. Acompañamiento humano.</p><a href="#inicio" class="btn btn-primary">Volver al inicio <i class="fa-solid fa-arrow-up"></i></a></div></section>
+  </main>
+
+  <footer><div class="footer-content"><div class="footer-logo"><div class="logo-icon"><i class="fa-solid fa-bridge"></i></div><div><strong>PUENTE SEGURO</strong><span>INNOW 2026</span></div></div><p>Prototipo académico desarrollado con fines de demostración. No constituye un servicio de emergencia ni reemplaza atención profesional.</p><span class="copyright">© 2026 Puente Seguro · CTP Calle Blancos</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
